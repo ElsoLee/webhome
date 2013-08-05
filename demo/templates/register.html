@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>register</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{{ static_url("css/normalize.css") }}" type="text/css">
-        <link rel="stylesheet" media="screen" href="{{ static_url("plugin/bootstrap/css/bootstrap.min.css") }}" type="text/css">
-        <link rel="stylesheet" href="{{ static_url("plugin/bootstrap/css/bootstrap-responsive.min.css") }}" type="text/css">
-        <link rel="stylesheet" href="{{ static_url("plugin/font-awesome/css/font-awesome.min.css") }}" type="text/css">
-                <!--[if IE 7]>
-                    <link rel="stylesheet" href="plugin/font-awesome/css/font-awesome-ie7.min.css">
-                <![endif]-->
-        <link rel="stylesheet" href="{{ static_url("css/main.css") }}">
-        <script src="{{ static_url("js/vendor/modernizr-2.6.2.min.js") }}"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please upgrade your browser</a> or activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
-<!--==========================================================================
-     Header Unit (LOGO & Slogan)
-    ==========================================================================-->
-<div class="row-fluid"><!-- .row-fluid [start] -->
-	<div class="span12 slogan text-center"><!-- .span12 [start] -->
+{% extends "base.html" %}
+{% block content %}
+<div class="span12 slogan text-center"><!-- .span12 [start] -->
         <img class="logo" src="{{ static_url("image/logo.png") }}" alt="logo">
         <h1><small>please sign up.</small></h1>
         <div class="login">
@@ -44,77 +16,5 @@
             </form>
         </div>
 		
-	</div><!-- .span12 [end] -->
-</div><!-- .row-fluid [end] -->
-
-
-<!--==========================================================================
-			Information Unit
-				-In these (two) information balloons you have to tell (in a simple way)
-					like "what are your app going to do/change?"
-    ==========================================================================-->
-
-<div class="row-fluid"><!-- .row-fluid [start] -->
-
-	<div class="span4 info-container left">
-
 	</div>
-
-
-	<div class="span4 info-container right">
-
-	</div>
-
-</div><!-- .row-fluid [end] -->
-
-
-<!--==========================================================================
-     Connect your app with url to store.
-    ==========================================================================-->
-
-<div class="row-fluid"><!-- .row-fluid [start] -->
-
-</div><!-- .row-fluid [end] -->
-
-
-
-<!--==========================================================================
-     Social Network Unit
-    ==========================================================================-->
-
-<div class="row-fluid"><!-- .row-fluid [start] -->
-
-</div><!-- .row-fluid [end] -->
-
-
-<!--==========================================================================
-     Footer Unit
-    ==========================================================================-->
-
-<footer>
-	<div class="row-fluid footer">
-		<div class="span12">
-			<p class="copyright text-right"><small>all rights reserved © 2013</small></p>
-		</div>
-	</div>
-</footer>
-
-
-
-
-
-
-
-
-
-<!--==========================================================================
-     Javascript Unit
-				-connect your Google Analytics account easily.
-    ==========================================================================-->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{ static_url("js/vendor/jquery-1.9.1.min.js") }}"><\/script>')</script>
-        <script src="{{ static_url("js/plugins.js") }}"></script>
-                <script src="{{ static_url("plugin/bootstrap/js/bootstrap.min.js") }}"></script>
-        <script src="{{ static_url("js/main.js") }}"></script>
-</body>
-</html>
+{% end %}
