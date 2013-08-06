@@ -8,7 +8,7 @@ webhome
 
 * tornado3.1 [官方文档](http://www.tornadoweb.org/en/stable/);
 * mysql(需要安装`python-mysqldb`);
-* 检测是否安装`torndb`,如否，请执行`sudo pip install torndb`;
+* 检测是否安装`torndb`,如否，请执行`sudo pip install torndb`,检测方法为再`python`解释器下输入`import torndb`,如果没有错误即安装成功;
 
 
 ### 安装方法
@@ -17,7 +17,7 @@ webhome
 2. 创建数据库,打开终端输入`mysql -u root -p`,输入密码.进入`mysql`数据库命令行;
 3. 执行`CREATE DATABASE webhome;`以创建数据库`webhome`;
 4. 执行`GRANT ALL PRIVILEGES ON webhome.* TO 'webhome'@'localhost' IDENTIFIED BY 'webhome';`创建数据库使用者和密码均为`webhome`;
-5. 创建表,在终端输入`mysql --user=blog --password=blog --database=blog < schema.sql;`;
+5. 创建表,在终端输入`mysql --user=webhome --password=webhome --database=webhome < schema.sql;`;
 6. 终端输入`python main.py`,即可运行。
 
 
