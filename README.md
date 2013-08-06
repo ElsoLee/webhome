@@ -16,8 +16,8 @@ webhome
 1. `clone`到本地,命令如下：`git clone https://github.com/colinthink/webhome.git`;
 2. 创建数据库,打开终端输入`mysql -u root -p`,输入密码.进入`mysql`数据库命令行;
 3. 执行`CREATE DATABASE webhome;`以创建数据库`webhome`;
-4. 执行`GRANT ALL PRIVILEGES ON webhome.* TO 'webhome'@'localhost' IDENTIFIED BY 'webhome';`创建数据库使用者和密码均为`webhome`;
-5. 创建表,在终端输入`mysql --user=webhome --password=webhome --database=webhome < schema.sql;`;
+4. 执行`GRANT ALL PRIVILEGES ON webhome.* TO 'webhome'@'localhost' IDENTIFIED BY 'webhome';`创建数据库使用者和密码均为`webhome`,退出`mysql`命令行;
+5. 在终端输入`mysql --user=webhome --password=webhome --database=webhome < schema.sql;`;
 6. 终端输入`python main.py`,即可运行。
 
 
