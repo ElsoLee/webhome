@@ -18,8 +18,8 @@ from tornado.options import define, options
 define("port", default=8000, help="run on the given port", type=int)
 define("mysql_host", default="127.0.0.1:3306", help="webhome database host")
 define("mysql_database", default="webhome", help="webhome database name")
-define("mysql_user", default="root", help="webhome database user")
-define("mysql_password", default="931012", help="webhome database password")
+define("mysql_user", default="webhome", help="webhome database user")
+define("mysql_password", default="webhome", help="webhome database password")
 
 
 
